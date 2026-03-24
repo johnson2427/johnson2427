@@ -104,6 +104,17 @@
         <li>Built a Rust-based tool ("Recon") using hash-based diffs to verify dataset consistency across sources.</li>
       </ul>
 
+      <div class="job-category">Keyslate — Secure Kubernetes Platform</div>
+      <ul>
+        <li>Architecting Keyslate, a full-stack Rust platform for secure Kubernetes deployments combining GitOps orchestration, identity management, and infrastructure-as-code generation across 19 crates and 60+ deployable services.</li>
+        <li>Built a custom Vault operator with Kubernetes CRDs (VaultStore, VaultSecret, VaultPolicy) to replace external secret solutions, eliminating SOPS-encrypted secrets in favor of Vault as the single source of truth.</li>
+        <li>Developed a cluster-local git server in Rust (SSH via russh + HTTP API) enabling FluxCD to reconcile from an in-cluster mirror rather than external repositories.</li>
+        <li>Implemented OIDC authentication with Keycloak integration, multi-tenant realm management, and per-tenant admin client pooling with an event bus for plugin-based integrations.</li>
+        <li>Built dual WASM frontends — an admin portal (Yew) for identity management and an IaC portal (Dioxus) with an interactive wizard for cluster provisioning across bare-metal, K3s, RKE2, and cloud providers (AWS, DigitalOcean).</li>
+        <li>Designed a service dependency resolution engine with topological ordering to automatically generate FluxCD kustomizations for the full platform stack (Cilium, Istio, Vault, Keycloak, CNPG, Grafana LGTMP, and more).</li>
+        <li>Integrated a Go sidecar wrapping the Helm SDK for chart installations, avoiding CLI shell-outs from Rust for reliable, programmatic Helm operations.</li>
+      </ul>
+
       <div class="job-category">Consulting & Client Work</div>
       <ul>
         <li>Advised early-stage startups on infrastructure modernization from RPC synchronous backend APIs to FastAPI with Celery task queue systems.</li>
