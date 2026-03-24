@@ -24,10 +24,12 @@
       <a href="https://github.com/johnson2427" target="_blank">github.com/johnson2427</a>
     </div>
     <p class="summary">
-      Engineering leader with 8 years of experience architecting and scaling distributed systems, cloud-native
-      platforms, and developer tooling. Proven track record in building high-performance engineering teams,
-      leading cross-functional initiatives, and delivering mission-critical infrastructure. Expertise in Kubernetes,
-      DevOps, event-driven systems, data analytics, and algorithm development.
+      Engineering leader with 8+ years of experience architecting distributed systems, cloud-native platforms,
+      and developer tooling — from Kubernetes operators and GitOps pipelines to full-stack Rust platforms and
+      data-driven analytics engines. Proven ability to build and lead high-performing engineering teams, drive
+      cross-functional initiatives, and deliver mission-critical infrastructure across defense, enterprise, and
+      startup environments. Equally effective writing low-level systems code in Rust and Go as leading
+      platform strategy and mentoring engineers.
     </p>
   </section>
 
@@ -37,12 +39,21 @@
     <div class="skills-grid">
       <div class="skill-item">Engineering Leadership & Mentorship</div>
       <div class="skill-item">Technical Strategy & Architecture</div>
-      <div class="skill-item">Cloud-Native (AWS, K8s, Crossplane, Terraform)</div>
+      <div class="skill-item">Cloud-Native (AWS, GCP, Azure, DigitalOcean)</div>
+      <div class="skill-item">Kubernetes (EKS, Talos, K3s, RKE2, Crossplane)</div>
+      <div class="skill-item">Kubernetes Operator Development (Go, Rust)</div>
+      <div class="skill-item">GitOps (FluxCD, ArgoCD, Helm, Kustomize)</div>
+      <div class="skill-item">Identity & Access (Keycloak, OIDC, Vault, Zero-Trust)</div>
+      <div class="skill-item">Developer Platforms (Backstage, IDPs, Internal Tooling)</div>
+      <div class="skill-item">CI/CD Automation & DevSecOps</div>
+      <div class="skill-item">Event-Driven Systems (Kafka, NATS, RabbitMQ)</div>
+      <div class="skill-item">Microservice & Distributed Architectures</div>
+      <div class="skill-item">Observability (OpenTelemetry, Grafana LGTMP)</div>
+      <div class="skill-item">AI/ML Infrastructure (NIM, NeMo, Open WebUI)</div>
       <div class="skill-item">Data Analytics & Algorithm Development</div>
-      <div class="skill-item">Developer Platforms & Internal Tooling</div>
-      <div class="skill-item">CI/CD Automation, GitOps, DevSecOps</div>
-      <div class="skill-item">Event-Driven & Microservice Architectures</div>
-      <div class="skill-item">Python, Golang, Rust, SQL</div>
+      <div class="skill-item">Infrastructure as Code (Terraform, Crossplane)</div>
+      <div class="skill-item">Python, Golang, Rust, SQL, VBA</div>
+      <div class="skill-item">WASM Frontends (Dioxus), React, FastAPI, Gin</div>
     </div>
   </section>
 
@@ -54,37 +65,52 @@
     <div class="job">
       <div class="job-header">
         <div class="job-company">Clarity Innovations <span class="job-location">— Herndon, VA (Remote)</span></div>
-        <div class="job-title">Principal Software Engineer, Engineering Manager</div>
+        <div class="job-title">Senior Principal Software Engineer, Engineering Manager</div>
         <div class="job-dates">Oct 2022 – Present</div>
       </div>
 
       <div class="job-category">Team & Organizational Leadership</div>
       <ul>
-        <li>Manage and mentor a growing team of engineers, conducting performance reviews, 1:1s, and career development plans.</li>
-        <li>Partner with product and executive leadership to define engineering goals and long-term platform vision.</li>
+        <li>Lead and mentor a growing engineering team, driving performance reviews, 1:1s, and individualized career development plans.</li>
+        <li>Collaborate with product and executive leadership to align engineering strategy with long-term platform objectives.</li>
       </ul>
 
       <div class="job-category">Platform Architecture & Cloud Infrastructure</div>
       <ul>
-        <li>Led design and deployment of a highly available Kubernetes platform using Talos and Crossplane on AWS.</li>
-        <li>Designed internal developer platforms (IDPs) integrating Keycloak, ArgoCD, Backstage, and Gitea.</li>
-        <li>Reverse engineered and deployed Helm testing pipeline to restore CI after the departure of lead systems engineer.</li>
-        <li>Scaled FastAPI Rest services with async support and load balancing using gunicorn/uvicorn.</li>
+        <li>Architected and deployed a highly available Kubernetes platform on AWS using Talos and Crossplane.</li>
+        <li>Designed internal developer platforms (IDPs) integrating Keycloak, ArgoCD, Backstage, and Gitea to accelerate developer onboarding and self-service infrastructure.</li>
+        <li>Engineered a custom Kubernetes operator in Go for IP address management with PrefixClaim CRDs, eliminating the heavyweight Netbox dependency while preserving full IPAM functionality.</li>
+        <li>Deliver end-to-end engineering contributions across EKS cluster management platforms, spanning bug resolution, feature development, and infrastructure enhancements.</li>
+        <li>Developed a Backstage plugin for Keycloak user and group administration, centralizing identity management within the developer portal.</li>
+        <li>Reverse-engineered and restored a Helm testing pipeline to re-establish CI capability following a key personnel departure.</li>
+        <li>Optimized FastAPI services with async concurrency and gunicorn/uvicorn load balancing to improve throughput and reliability.</li>
+      </ul>
+
+      <div class="job-category">AI/ML Infrastructure & Model Deployment</div>
+      <ul>
+        <li>Promoted to lead an AI/ML deployment initiative, driving the architecture and delivery of machine learning infrastructure on Kubernetes.</li>
+        <li>Deployed Open WebUI as a self-hosted conversational AI interface, providing teams with secure, on-premise access to large language models.</li>
+        <li>Orchestrated model deployments using NVIDIA NIM microservices for optimized GPU inference at scale.</li>
+        <li>Integrated NVIDIA NeMo for model training, fine-tuning, and evaluation workflows within the platform's Kubernetes infrastructure.</li>
+        <li>Deployed vLLM as a high-throughput inference engine for serving large language models with efficient memory management and continuous batching.</li>
+        <li>Evaluated and deployed lightweight language models to optimize for latency, cost, and resource-constrained environments while maintaining task-specific accuracy.</li>
+        <li>Implemented Model Context Protocol (MCP) servers to standardize tool integration and context management across AI agents and LLM-powered workflows.</li>
+        <li>Established model serving pipelines with GPU scheduling and resource management to support production AI/ML workloads.</li>
       </ul>
 
       <div class="job-category">Developer Experience, Tooling, & Analytics</div>
       <ul>
-        <li>Developed reusable Helm charts and GitHub Actions workflows to standardize deployments.</li>
-        <li>Built a Task/Make CLI to manage ephemeral Kubernetes clusters for IaC development and testing.</li>
-        <li>Introduced Python-based analytics pipelines using Pandas and Polars to extract performance metrics from telemetry logs.</li>
-        <li>Automated performance testing with Pytest and Locust.</li>
+        <li>Authored reusable Helm charts and GitHub Actions workflows to standardize and accelerate deployment pipelines.</li>
+        <li>Built a Task/Make CLI for provisioning ephemeral Kubernetes clusters, streamlining IaC development and testing workflows.</li>
+        <li>Implemented Python-based analytics pipelines using Pandas and Polars to surface performance insights from telemetry data.</li>
+        <li>Established automated performance testing frameworks with Pytest and Locust to validate system behavior under load.</li>
       </ul>
 
       <div class="job-category">Scalable System Design & Algorithms</div>
       <ul>
-        <li>Designed and implemented a custom OpenTelemetry receiver/exporter for NATS JetStream in Golang, enabling secure transport of traces, metrics, and logs across isolated Kubernetes environments while instrumenting Falco security events with end-to-end latency metrics.</li>
-        <li>Architected an event-driven system with Kafka, NATS, and Golang to manage messaging across thousands of Linux devices, reducing compute by 95%.</li>
-        <li>Refactored legacy Python workloads and replaced deprecated stream processing libraries (e.g., Faust) with async Kafka systems.</li>
+        <li>Designed and implemented a custom OpenTelemetry receiver/exporter for NATS JetStream in Go, enabling secure transport of traces, metrics, and logs across isolated Kubernetes environments with end-to-end latency instrumentation for Falco security events.</li>
+        <li>Architected an event-driven messaging system with Kafka, NATS, and Go to orchestrate communication across thousands of Linux devices, reducing compute overhead by 95%.</li>
+        <li>Migrated legacy Python workloads from deprecated stream processing libraries (Faust) to async Kafka-based systems, improving maintainability and performance.</li>
       </ul>
     </div>
 
@@ -96,35 +122,39 @@
         <div class="job-dates">Jan 2018 – Present</div>
       </div>
 
-      <div class="job-category">Technical Architecture & Analytics</div>
-      <ul>
-        <li>Architected a 25+ node Talos Cluster for HPC capabilities, enabling automatic horizontal and vertical scalability of SQL, NoSQL, and Backtesting microservices.</li>
-        <li>Rewrote a FastAPI Rest service in Golang's Gin to reduce compute resources and increase throughput for critical data retrieval from Postgres.</li>
-        <li>Developed FastAPI services to expose metrics and scoring results from backtesting engine, exposing both SQL and NoSQL resources.</li>
-        <li>Built a Rust-based tool ("Recon") using hash-based diffs to verify dataset consistency across sources.</li>
-      </ul>
-
       <div class="job-category">Keyslate — Secure Kubernetes Platform</div>
       <ul>
-        <li>Architecting Keyslate, a full-stack Rust platform for secure Kubernetes deployments combining GitOps orchestration, identity management, and infrastructure-as-code generation across 19 crates and 60+ deployable services.</li>
-        <li>Built a custom Vault operator with Kubernetes CRDs (VaultStore, VaultSecret, VaultPolicy) to replace external secret solutions, eliminating SOPS-encrypted secrets in favor of Vault as the single source of truth.</li>
-        <li>Developed a cluster-local git server in Rust (SSH via russh + HTTP API) enabling FluxCD to reconcile from an in-cluster mirror rather than external repositories.</li>
-        <li>Implemented OIDC authentication with Keycloak integration, multi-tenant realm management, and per-tenant admin client pooling with an event bus for plugin-based integrations.</li>
-        <li>Built dual WASM frontends — an admin portal (Yew) for identity management and an IaC portal (Dioxus) with an interactive wizard for cluster provisioning across bare-metal, K3s, RKE2, and cloud providers (AWS, DigitalOcean).</li>
-        <li>Designed a service dependency resolution engine with topological ordering to automatically generate FluxCD kustomizations for the full platform stack (Cilium, Istio, Vault, Keycloak, CNPG, Grafana LGTMP, and more).</li>
-        <li>Integrated a Go sidecar wrapping the Helm SDK for chart installations, avoiding CLI shell-outs from Rust for reliable, programmatic Helm operations.</li>
+        <li>Architecting Keyslate, a full-stack Rust platform for secure Kubernetes deployments that unifies GitOps orchestration, identity management, and infrastructure-as-code generation across 19 crates and 60+ deployable services.</li>
+        <li>Engineered a custom Vault operator with Kubernetes CRDs (VaultStore, VaultSecret, VaultPolicy), eliminating SOPS-encrypted secrets in favor of Vault as the authoritative secret store.</li>
+        <li>Developed a cluster-local git server in Rust (SSH via russh, HTTP API) enabling FluxCD reconciliation from an in-cluster mirror independent of external repositories.</li>
+        <li>Implemented OIDC authentication with Keycloak, featuring multi-tenant realm management, per-tenant admin client pooling, and an event bus for plugin-based integrations.</li>
+        <li>Built dual Dioxus WASM frontends — an admin portal for identity management and an IaC portal with an interactive provisioning wizard supporting bare-metal, K3s, RKE2, Talos, and cloud providers (AWS, DigitalOcean, Google Cloud, Azure).</li>
+        <li>Designed a service dependency resolution engine with topological ordering to generate FluxCD kustomizations for the complete platform stack (Cilium, Istio, Vault, Keycloak, CNPG, Grafana LGTMP, and more).</li>
+        <li>Integrated a Go sidecar wrapping the Helm SDK for programmatic chart installations, eliminating CLI shell-outs for improved reliability and auditability.</li>
+      </ul>
+
+      <div class="job-category">Minerva Platform — Sports Analytics & DFS Strategy Engine</div>
+      <ul>
+        <li>Designed and built the Minerva platform, a distributed sports analytics engine for developing, backtesting, and deploying data-driven Daily Fantasy Sports strategies across DraftKings and FanDuel contests.</li>
+        <li>Architected a 25+ node Talos cluster for high-performance computing, enabling automatic horizontal and vertical scaling of SQL, NoSQL, and backtesting microservices.</li>
+        <li>Built queue-based data ingestion pipelines using RabbitMQ and Apache Airflow to aggregate player statistics, game schedules, and contest data from MySportsFeeds, DraftKings, and other sources.</li>
+        <li>Rewrote a critical data retrieval service from FastAPI to Golang's Gin, reducing compute overhead and significantly increasing throughput against Postgres.</li>
+        <li>Developed FastAPI and Go (Gin) REST services to expose metrics, scoring results, and backtesting outputs across PostgreSQL and MongoDB data stores.</li>
+        <li>Built a React-based administrative dashboard for managing configurations, viewing analytics, and monitoring platform health.</li>
+        <li>Developed "Recon," a Rust-based data integrity tool using hash-based diffs to verify dataset consistency across heterogeneous sources.</li>
+        <li>Built "Minoxide," a modular Rust workspace providing core libraries, CLI tooling, data migration utilities, and charting capabilities for the platform.</li>
       </ul>
 
       <div class="job-category">Consulting & Client Work</div>
       <ul>
-        <li>Advised early-stage startups on infrastructure modernization from RPC synchronous backend APIs to FastAPI with Celery task queue systems.</li>
-        <li>Designed containerized backend systems and deployment strategies for clients transitioning from monoliths to microservices.</li>
-        <li>Provided fractional engineering leadership and architecture reviews to improve platform reliability and developer velocity.</li>
-        <li>Delivered training on GitOps workflows, Kubernetes debugging, and Terraform-based IaC to internal client teams.</li>
-        <li>Helped implement zero-trust policies and secret management using Vault and KMS.</li>
-        <li>Led backend architecture for Web3 container platform deployed to AWS EKS, utilizing FastAPI, kr8s, Golang's Gin, GitHub Actions, and Terraform.</li>
-        <li>Developed KMS open-sourced plugin for secure key handling in the Ape Open Source ecosystem.</li>
-        <li>Led infrastructure modernization efforts for startups adopting Kubernetes and GitOps.</li>
+        <li>Advised early-stage startups on infrastructure modernization, migrating from synchronous RPC backends to FastAPI with Celery-based task queues.</li>
+        <li>Designed containerized backend architectures and deployment strategies for clients transitioning from monoliths to microservices.</li>
+        <li>Provided fractional engineering leadership and architecture reviews, improving platform reliability and developer velocity across client organizations.</li>
+        <li>Delivered hands-on training in GitOps workflows, Kubernetes debugging, and Terraform-based IaC to client engineering teams.</li>
+        <li>Implemented zero-trust security policies and secret management using Vault and KMS.</li>
+        <li>Led backend architecture for a Web3 container platform on AWS EKS, leveraging FastAPI, kr8s, Golang's Gin, GitHub Actions, and Terraform.</li>
+        <li>Developed an open-source KMS plugin for secure key handling within the Ape ecosystem.</li>
+        <li>Spearheaded infrastructure modernization efforts for startups adopting Kubernetes and GitOps practices.</li>
       </ul>
     </div>
 
@@ -136,9 +166,9 @@
         <div class="job-dates">Apr 2021 – Apr 2022</div>
       </div>
       <ul>
-        <li>Developed FastAPI RestAPI with a Python Dash front-end for data visualization of model health.</li>
+        <li>Built a FastAPI REST service with a Python Dash front-end for real-time data visualization of model health.</li>
         <li>Supported simulation infrastructure with analytics for propulsion model system behavior.</li>
-        <li>Developed data processing pipelines to extract model metrics.</li>
+        <li>Developed data processing pipelines to extract and surface model performance metrics.</li>
       </ul>
     </div>
 
@@ -146,9 +176,14 @@
     <div class="job">
       <div class="job-header">
         <div class="job-company">CECO Environmental <span class="job-location">— Wood Dale, IL</span></div>
-        <div class="job-title">Senior Project Engineer</div>
+        <div class="job-title">Project Engineer → Senior Project Engineer (promoted)</div>
         <div class="job-dates">Sep 2017 – Apr 2021</div>
       </div>
+      <ul>
+        <li>Developed a Python package to extract sales data from Microsoft Cloud (Excel) and programmatically populate data sheets in 3D AutoCAD, streamlining the model design workflow.</li>
+        <li>Led the transition from 2D CAD to 3D CAD across the engineering organization, modernizing design processes and improving accuracy.</li>
+        <li>Established the structural design standard using ASCE codes with finite element analysis (FEA), adopted as the team's baseline for structural evaluation.</li>
+      </ul>
     </div>
 
     <!-- Fresenius -->
@@ -158,6 +193,11 @@
         <div class="job-title">Project Engineer</div>
         <div class="job-dates">Aug 2016 – Sep 2017</div>
       </div>
+      <ul>
+        <li>Led VBA development for a state-of-the-art pharmaceutical manufacturing facility, building automated tools for manufacturing load calculations and capacity forecasting.</li>
+        <li>Engineered workload projection models to support long-term production planning and facility scaling decisions.</li>
+        <li>Identified $50M in avoided capital expenditure by demonstrating through efficiency analysis that a planned additional production line was unnecessary, directly influencing executive investment decisions.</li>
+      </ul>
     </div>
 
   </section>
