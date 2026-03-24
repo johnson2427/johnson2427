@@ -39,10 +39,20 @@ Engineering leader with 8+ years building distributed systems, cloud-native plat
 - **[ApeWorX](https://github.com/ApeWorX)** — Open-source smart contract development framework
 - **[Silverback Ltd](https://github.com/SilverbackLtd)** — Automated crypto hedge fund
 
-### Stats
+### Languages
 
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=johnson2427&count_private=true&show_icons=true&theme=gruvbox)](https://github.com/johnson2427)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=johnson2427&show_icons=true&langs_count=8&theme=gruvbox&hide=css,html,roff,scss,emacs%20lisp,vim%20snippet,objective-c,tex,liquid,lua,yasnippet,vim%20script&layout=compact)](https://github.com/johnson2427)
+| Language | Experience | Context |
+|----------|-----------|---------|
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" width="16" height="16"> **Rust** | 1+ year | Keyslate platform (19 crates), Minoxide, Recon, Vault operator, WASM frontends (Dioxus) |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="16" height="16"> **Python** | 8+ years | FastAPI services, data pipelines (Pandas, Polars), Airflow ETL, Ape/Silverback ecosystem, Locust |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="16" height="16"> **Go** | 2+ years | Kubernetes operators, OpenTelemetry exporters, Gin REST services, Helm API sidecar |
+| **SQL** | 8+ years | PostgreSQL, analytical queries, data modeling |
+| **HCL** | 4+ years | Terraform modules, Crossplane compositions |
+| **YAML** | 6+ years | Kubernetes manifests, Helm charts, FluxCD kustomizations, GitHub Actions |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16"> **JavaScript/React** | 1 year | Admin dashboards, Backstage plugins |
+| **VBA** | 2 years | Manufacturing automation, capacity forecasting |
+
+> *Most Rust and Go work lives in private repositories (Blackslate, Clarity) and isn't reflected in GitHub's public stats.*
 
 ### Resume
 Check out my full resume at [johnson2427.github.io/johnson2427](https://johnson2427.github.io/johnson2427/)
