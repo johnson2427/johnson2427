@@ -1,0 +1,8 @@
+baseURL = "https://johnson2427.github.io/johnson2427/"
+languageCode = "en-us"
+title = "Blake Johnson | Software Engineer"
+
+[taxonomies]
+
+[params]
+  description = "Engineering leader with 8 years of experience architecting and scaling distributed systems, cloud-native platforms, and developer tooling."

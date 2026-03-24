@@ -1,0 +1,311 @@
+/* Gruvbox Material Dark palette */
+:root {
+  --bg:         #282828;
+  --bg0:        #1d2021;
+  --bg1:        #32302f;
+  --bg2:        #3c3836;
+  --bg3:        #504945;
+  --fg:         #d4be98;
+  --fg0:        #e2cca9;
+  --fg1:        #c5b18d;
+  --red:        #ea6962;
+  --orange:     #e78a4e;
+  --yellow:     #d8a657;
+  --green:      #a9b665;
+  --aqua:       #89b482;
+  --blue:       #7daea3;
+  --purple:     #d3869b;
+  --grey:       #928374;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg0);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+/* ── Nav ── */
+.nav {
+  position: sticky;
+  top: 0;
+  background: var(--bg0);
+  border-bottom: 1px solid var(--bg2);
+  padding: 0.75rem 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: var(--green);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--fg1);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--yellow);
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ── Hero ── */
+.hero {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--bg2);
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2.2rem;
+  color: var(--fg0);
+  margin-bottom: 0.25rem;
+}
+
+.hero .tagline {
+  font-size: 1.1rem;
+  color: var(--yellow);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.hero .clearance {
+  display: inline-block;
+  background: var(--bg2);
+  color: var(--orange);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.hero .contact-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.hero .contact-row a,
+.hero .contact-row span {
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.hero .contact-row a:hover {
+  color: var(--aqua);
+}
+
+.hero .summary {
+  color: var(--fg1);
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+/* ── Section ── */
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.3rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--bg3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-title .prompt {
+  color: var(--yellow);
+}
+
+/* ── Skills grid ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.skill-item {
+  background: var(--bg1);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--aqua);
+  font-size: 0.9rem;
+  color: var(--fg);
+}
+
+/* ── Experience ── */
+.job {
+  background: var(--bg1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--bg2);
+}
+
+.job-header {
+  margin-bottom: 1rem;
+}
+
+.job-company {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--fg0);
+}
+
+.job-location {
+  color: var(--grey);
+  font-size: 0.85rem;
+}
+
+.job-title {
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.job-dates {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--blue);
+}
+
+.job-category {
+  font-weight: 600;
+  color: var(--orange);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.job ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job li {
+  padding: 0.3rem 0 0.3rem 1.2rem;
+  position: relative;
+  font-size: 0.9rem;
+  color: var(--fg1);
+  line-height: 1.6;
+}
+
+.job li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+}
+
+/* ── Education ── */
+.edu-item {
+  background: var(--bg1);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--bg2);
+}
+
+.edu-degree {
+  font-weight: 700;
+  color: var(--fg0);
+  font-size: 1rem;
+}
+
+.edu-school {
+  color: var(--aqua);
+  font-size: 0.9rem;
+}
+
+.edu-year {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--blue);
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--bg2);
+  margin-top: 2rem;
+  color: var(--grey);
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero .contact-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
