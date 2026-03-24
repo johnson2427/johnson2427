@@ -275,6 +275,97 @@ body {
   color: var(--blue);
 }
 
+/* ── Projects / Orgs ── */
+.org {
+  background: var(--bg1);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--bg2);
+}
+
+.org-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.org-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--green);
+  text-decoration: none;
+}
+
+.org-name:hover {
+  color: var(--aqua);
+}
+
+.org-vis {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.org-vis[class] {
+  background: var(--bg2);
+  color: var(--grey);
+}
+
+.org-desc {
+  color: var(--fg1);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.org-repos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.repo-label {
+  color: var(--grey);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.repo-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--fg0);
+  text-decoration: none;
+  background: var(--bg2);
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.repo-link:hover {
+  background: var(--bg3);
+  color: var(--green);
+}
+
+.repo-icon {
+  width: 14px;
+  height: 14px;
+  max-width: 14px;
+  max-height: 14px;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* ── Footer ── */
 .footer {
   text-align: center;
