@@ -146,6 +146,79 @@ body {
   line-height: 1.7;
 }
 
+.hero .pdf-link {
+  background: var(--bg2);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.hero .pdf-link:hover {
+  background: var(--bg3);
+  color: var(--aqua);
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+
+.tech-stack img {
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.tech-stack img:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+/* ── Currently Working On ── */
+.current-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.current-item {
+  background: var(--bg1);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--bg2);
+  border-left: 3px solid var(--green);
+}
+
+.current-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--fg0);
+}
+
+.current-org {
+  font-size: 0.85rem;
+  color: var(--yellow);
+  margin-bottom: 0.5rem;
+}
+
+.current-desc {
+  font-size: 0.9rem;
+  color: var(--fg1);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .current-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Section ── */
 .section {
   margin-bottom: 2.5rem;
@@ -508,5 +581,122 @@ body {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ── Print Styles ── */
+@media print {
+  body {
+    background: white;
+    color: #1d2021;
+    font-size: 11pt;
+  }
+
+  .nav, .footer, .pdf-link, .showcase, .lightbox-overlay, .tech-stack {
+    display: none !important;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 1rem 0;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .hero h1 {
+    color: #1d2021;
+    font-size: 1.8rem;
+  }
+
+  .hero .tagline {
+    color: #504945;
+  }
+
+  .hero .clearance {
+    background: #eee;
+    color: #1d2021;
+    border: 1px solid #aaa;
+  }
+
+  .hero .contact-row a,
+  .hero .contact-row span {
+    color: #504945;
+  }
+
+  .hero .summary {
+    color: #3c3836;
+  }
+
+  .section-title {
+    color: #1d2021;
+    border-bottom-color: #ccc;
+  }
+
+  .section-title .prompt {
+    display: none;
+  }
+
+  .skill-item {
+    background: #f5f5f5;
+    border-left-color: #888;
+    color: #1d2021;
+  }
+
+  .job, .edu-item, .org, .current-item {
+    background: white;
+    border-color: #ddd;
+    break-inside: avoid;
+  }
+
+  .job-company, .edu-degree, .current-name {
+    color: #1d2021;
+  }
+
+  .job-title, .current-org {
+    color: #504945;
+  }
+
+  .job-dates, .edu-year {
+    color: #666;
+  }
+
+  .job-category {
+    color: #504945;
+  }
+
+  .job li {
+    color: #3c3836;
+  }
+
+  .job li::before {
+    color: #888;
+  }
+
+  .honor-badge {
+    background: #eee;
+    color: #504945;
+    border-color: #aaa;
+  }
+
+  .org-name {
+    color: #1d2021;
+  }
+
+  .org-desc, .current-desc {
+    color: #3c3836;
+  }
+
+  .repo-link {
+    background: #f5f5f5;
+    color: #1d2021;
+    border: 1px solid #ddd;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 }
